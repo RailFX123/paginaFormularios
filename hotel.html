@@ -46,9 +46,8 @@
             <div class="row">
                 <div class="col-lg-12 order-2 order-lg-1 text-center">
                     <div class="col-lg-12 order-2 order-lg-1">
-                        <h1>Registro Medico</h1>
-                        <p class="lead">Ingrese la información solicitada para completar el registro medico.</p>
-
+                        <h1>Reservar Hotel</h1>
+                        <p class="lead">Ingrese la información solicitada para completar el formulario de reservación.</p>
                     </div>
                 </div>
             </div>
@@ -61,25 +60,28 @@
                     <!-- Default input email -->
                     <label for="defaultFormApellido" class="grey-text font-weight-light">Apellido:</label>
                     <input type="text" id="defaultFormApellido" name="defaultFormApellido" class="form-control" maxlength="50" minlength="3" required>
-
-                    <label for="defaultFormCardTipoSangreEx" class="grey-text font-weight-light">Tipo de sangre:</label>
-                    <select class="custom-select" id="defaultFormCardTipoSangreEx" name="defaultFormCardTipoSangreEx" required>
-                            <option value="" selected>Elige...</option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
-                            <option value="3">AB</option>
-                            <option value="3">O</option>
-                          </select>
                     <br>
-                    <label for="defaultFormCardDateEx" class="grey-text font-weight-light">Fecha de nacimiento:</label>
+
+                    <label for="defaultFormCardTelEx" class="grey-text font-weight-light">Telefono:</label>
+                    <input type="tel" id="defaultFormCardTelEx" class="form-control" minlength="8" minlength="12" required>
+                    <br>
+
+                    <label for="defaultFormCardEmailEx" class="grey-text font-weight-light">Email:</label>
+                    <input type="email" id="defaultFormCardEmailEx" name="defaultFormCardEmailEx" class="form-control" minlength="8" minlength="12" required>
+                    <br>
+
+                    <label for="defaultFormCardDateEx" class="grey-text font-weight-light">Fecha de llegada:</label>
                     <input type="date" id="defaultFormCardDateEx" name="defaultFormCardDateEx" class="form-control" required>
                     <br>
-                    <label for="defaultFormCardTelEx" class="grey-text font-weight-light">Telefono:</label>
-                    <input type="tel" id="defaultFormCardTelEx" name="defaultFormCardTelEx" class="form-control" minlength="8" minlength="12" required>
+
+                    <label for="defaultFormCardDateIEx" class="grey-text font-weight-light">Fecha de partida:</label>
+                    <input type="date" id="defaultFormCardDateIEx" name="defaultFormCardDateIEx" class="form-control" required>
                     <br>
-                    <label for="defaultFormCardIDEx" class="grey-text font-weight-light">ID:</label>
-                    <input pattern="^\d{13}$" id="defaultFormCardIDEx" name="defaultFormCardIDEx" class="form-control" minlength="8" minlength="12" required>
+
+                    <label for="defaultFormPersonasx" class="grey-text font-weight-light">Cantidad de personas:</label>
+                    <input type="number" id="defaultFormPersonasx" name="defaultFormPersonasx" max="3" min="1" class="form-control" required>
                     <br>
+
                     <div class="text-center py-4 mt-3">
                         <button class="btn btn-outline-purple" type="submit">Registrar <i class="fa fa-amazon" aria-hidden="true"></i></i></button>
                     </div>

@@ -46,8 +46,8 @@
             <div class="row">
                 <div class="col-lg-12 order-2 order-lg-1 text-center">
                     <div class="col-lg-12 order-2 order-lg-1">
-                        <h1>Registro Medico</h1>
-                        <p class="lead">Ingrese la información solicitada para completar el registro medico.</p>
+                        <h1>Solicitud de empleo</h1>
+                        <p class="lead">Ingrese la información solicitada para completar la solicitud de empleo.</p>
 
                     </div>
                 </div>
@@ -58,30 +58,52 @@
                     <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Nombre:</label>
                     <input type="text" id="defaultFormCardNameEx" name="defaultFormCardNameEx" class="form-control" maxlength="20" minlength="3" required>
                     <br>
-                    <!-- Default input email -->
+
                     <label for="defaultFormApellido" class="grey-text font-weight-light">Apellido:</label>
                     <input type="text" id="defaultFormApellido" name="defaultFormApellido" class="form-control" maxlength="50" minlength="3" required>
+                    <br>
 
-                    <label for="defaultFormCardTipoSangreEx" class="grey-text font-weight-light">Tipo de sangre:</label>
-                    <select class="custom-select" id="defaultFormCardTipoSangreEx" name="defaultFormCardTipoSangreEx" required>
-                            <option value="" selected>Elige...</option>
-                            <option value="1">A</option>
-                            <option value="2">B</option>
-                            <option value="3">AB</option>
-                            <option value="3">O</option>
-                          </select>
-                    <br>
-                    <label for="defaultFormCardDateEx" class="grey-text font-weight-light">Fecha de nacimiento:</label>
-                    <input type="date" id="defaultFormCardDateEx" name="defaultFormCardDateEx" class="form-control" required>
-                    <br>
                     <label for="defaultFormCardTelEx" class="grey-text font-weight-light">Telefono:</label>
                     <input type="tel" id="defaultFormCardTelEx" name="defaultFormCardTelEx" class="form-control" minlength="8" minlength="12" required>
                     <br>
+                    <label for="defaultFormCardEmailx" class="grey-text font-weight-light">Email:</label>
+                    <input type="email" id="defaultFormCardEmailx" name="defaultFormCardEmailx" class="form-control" minlength="8" minlength="12" required>
+                    <br>
+
+                    <label for="defaultFormDireccion" class="grey-text font-weight-light">Direccion:</label>
+                    <textarea class="form-control" maxlength="100" id="defaultFormDireccion" name="defaultFormDireccion" required></textarea>
+                    <br>
+
+                    <label for="defaultFormCardEmpleoEx" class="grey-text font-weight-light">Plaza a la que desea aplicar:</label>
+                    <select class="custom-select" id="defaultFormCardEmpleoEx" name="defaultFormCardEmpleoEx" required>
+                            <option value="" selected>Elige...</option>
+                            <option value="1">Empleo 1</option>
+                            <option value="2">Empleo 2</option>
+                            <option value="3">Empleo 3</option>
+                            <option value="3">Empleo 4</option>
+                          </select>
+                    <br>
+
+                    <label for="defaultFormCardTipoAgenciaEx" class="grey-text font-weight-light">Agencia en la que desea laborar:</label>
+                    <select class="custom-select" id="defaultFormCardTipoAgenciaEx" name="defaultFormCardTipoAgenciaEx" required>
+                            <option value="" selected>Elige...</option>
+                            <option value="1">Agencia 1</option>
+                            <option value="2">Agencia 2</option>
+                            <option value="3">Agencia 3</option>
+                            <option value="3">Agencia 4</option>
+                          </select>
+                    <br>
+
+                    <label for="defaultFormCardCVEx" class="grey-text font-weight-light">Sube tu curriculum:</label>
+                    <input type="file" accept="application/pdf" id="defaultFormCardCVEx" name="defaultFormCardCVEx" class="form-control-file" required>
+                    <br>
+
                     <label for="defaultFormCardIDEx" class="grey-text font-weight-light">ID:</label>
                     <input pattern="^\d{13}$" id="defaultFormCardIDEx" name="defaultFormCardIDEx" class="form-control" minlength="8" minlength="12" required>
                     <br>
+
                     <div class="text-center py-4 mt-3">
-                        <button class="btn btn-outline-purple" type="submit">Registrar <i class="fa fa-amazon" aria-hidden="true"></i></i></button>
+                        <button class="btn btn-outline-purple" type="submit"><i class="fa fa-amazon" aria-hidden="true">Enviar</i></button>
                     </div>
                 </form>
             </div>
