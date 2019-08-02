@@ -31,7 +31,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Inicio 
                         <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="medicos.html">Medicos</a>
+                    <a class="nav-item nav-link" href="#">Medicos</a>
                     <a class="nav-item nav-link" href="#">Solicitud Empleo</a>
                     <a class="nav-item nav-link" href="#">Reservación Hotel</a>
                     <a class="nav-item nav-link" href="#">Reservación Hotel</a>
@@ -42,19 +42,52 @@
     </nav>
 
     <!-- Hero Section-->
-    <section class="bg-light">
+    <section class="bg-light py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1">
-                    <h1>Bienvenido a validación de formularios</h1>
-                    <p class="lead">En esta tarea se aplicara lo aprendido en clase para realizar una pagina responsive donde se realizaran validaciones sobre formularios de distinta clase.</p>
-                    <p><a href="medicos.html" class="btn btn-primary shadow mr-2">Empezar</a></p>
+                <div class="col-lg-12 order-2 order-lg-1 text-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h1>Registro Medico</h1>
+                        <p class="lead">Ingrese la información solicitada para completar el registro medico.</p>
+
+                    </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2"><img src="images\image1.jpg" alt="..." class="img-fluid"></div>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <form method="GET">
+                    <!-- Default input name -->
+                    <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Nombre:</label>
+                    <input type="text" id="defaultFormCardNameEx" name="defaultFormCardNameEx" class="form-control" maxlength="20" minlength="3" required>
+                    <br>
+                    <!-- Default input email -->
+                    <label for="defaultFormApellido" class="grey-text font-weight-light">Apellido:</label>
+                    <input type="text" id="defaultFormApellido" name="defaultFormApellido" class="form-control" maxlength="50" minlength="3" required>
+
+                    <label for="defaultFormCardTipoSangreEx" class="grey-text font-weight-light">Tipo de sangre:</label>
+                    <select class="custom-select" id="defaultFormCardTipoSangreEx" name="defaultFormCardTipoSangreEx" required>
+                            <option value="" selected>Elige...</option>
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                            <option value="3">AB</option>
+                            <option value="3">O</option>
+                          </select>
+                    <br>
+                    <label for="defaultFormCardDateEx" class="grey-text font-weight-light">Fecha de nacimiento:</label>
+                    <input type="date" id="defaultFormCardDateEx" name="defaultFormCardDateEx" class="form-control" required>
+                    <br>
+                    <label for="defaultFormCardTelEx" class="grey-text font-weight-light">Telefono:</label>
+                    <input type="tel" id="defaultFormCardTelEx" class="form-control" minlength="8" minlength="12" required>
+                    <br>
+                    <label for="defaultFormCardIDEx" class="grey-text font-weight-light">ID:</label>
+                    <input pattern="^\d{13}$" id="defaultFormCardIDEx" name="defaultFormCardIDEx" class="form-control" minlength="8" minlength="12" required>
+                    <br>
+                    <div class="text-center py-4 mt-3">
+                        <button class="btn btn-outline-purple" type="submit">Registrar <i class="fa fa-amazon" aria-hidden="true"></i></i></button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-
     <!-- Footer-->
     <div class="py-5 bg-light ">
         <div class="container">
